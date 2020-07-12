@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/share_back"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Image"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+             />
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/home" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="450dp"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="100dp">
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="450dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/share_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/creation"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bg">
+
+
+        <ImageView
+            android:id="@+id/whatsap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/whatsapp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"/>
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"/>
+
+        <ImageView
+            android:id="@+id/insta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/instagram"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"/>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/connect"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

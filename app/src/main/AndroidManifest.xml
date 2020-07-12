@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.candycam.photoeditor">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Album.Full_Screen_Activity"></activity>
+        <activity android:name=".Effect.Effect_Activity" />
+        <activity android:name=".CropImage.CropActivity" />
+        <activity
+            android:name=".Edit_Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartActivity" />
+        <activity android:name=".jp.co.cyberagent.android.gpuimage.sample.activity.ActivityMain" />
+        <activity android:name=".jp.co.cyberagent.android.gpuimage.sample.activity.ActivityCamera" />
+        <activity android:name=".jp.co.cyberagent.android.gpuimage.sample.activity.ActivityGallery" />
+        <activity android:name=".ShareActivity" />
+        <activity android:name=".Album.MyCreationActivity"/>
+
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths"></meta-data>
+    </application>
+
+</manifest>

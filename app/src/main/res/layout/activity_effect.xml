@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2450"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1C1E3A">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Image"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_done" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <jp.co.cyberagent.android.gpuimage.GPUImageView
+            android:id="@+id/gpuimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"/>
+
+
+    </FrameLayout>
+
+
+    <com.candycam.photoeditor.HorizontalListView
+        android:id="@+id/effect_list"
+        android:layout_width="match_parent"
+        android:background="#2B2450"
+        android:visibility="visible"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</LinearLayout>

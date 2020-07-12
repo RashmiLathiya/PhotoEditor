@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellowback"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E8FFFFFF">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Creation"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/no_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="No Image"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#4C4C4C"/>
+
+        <GridView
+            android:id="@+id/lstList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/value_5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scrollbars="none"
+            android:numColumns="2" />
+    </LinearLayout>
+</RelativeLayout>
