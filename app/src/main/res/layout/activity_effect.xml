@@ -58,7 +58,6 @@
 
     </FrameLayout>
 
-
     <com.candycam.photoeditor.HorizontalListView
         android:id="@+id/effect_list"
         android:layout_width="match_parent"
@@ -66,6 +65,50 @@
         android:visibility="visible"
         android:layout_height="95dp"
         android:layout_alignParentBottom="true"/>
+
+    <com.candycam.photoeditor.HorizontalListView
+        android:id="@+id/smoke_list"
+        android:layout_width="match_parent"
+        android:background="#2B2450"
+        android:visibility="gone"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"/>
+
+
+    <com.candycam.photoeditor.HorizontalListView
+        android:id="@+id/lens_list"
+        android:layout_width="match_parent"
+        android:background="#2B2450"
+        android:visibility="gone"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/effect"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/b1"/>
+
+        <ImageView
+            android:id="@+id/smoke"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/b2"/>
+        <ImageView
+            android:id="@+id/lens"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/b1"/>
+
+    </LinearLayout>
 
 
 </LinearLayout>

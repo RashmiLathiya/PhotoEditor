@@ -24,7 +24,7 @@ public class EffectsAdapter extends BaseAdapter {
 
     static class Viewholder {
         ImageView img,select;
-        TextView img_name;
+            TextView img_name;
         Viewholder() {
         }
     }
@@ -57,8 +57,6 @@ public class EffectsAdapter extends BaseAdapter {
         } else {
             viewholder = (Viewholder) view.getTag();
         }
-
-
 
         viewholder.img.setImageResource(((Integer) this.effectList.get(i)).intValue());
         if (i == 0) {

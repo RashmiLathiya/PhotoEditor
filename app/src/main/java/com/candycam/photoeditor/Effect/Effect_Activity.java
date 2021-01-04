@@ -33,11 +33,10 @@ import jp.co.cyberagent.android.gpuimage.GPUImageView;
 
 public class Effect_Activity extends AppCompatActivity {
 
-    HorizontalListView effect_list;
+    HorizontalListView effect_list, smoke_list, lens_list;
     GPUImageView mGPUImageView;
-    ImageView back,save;
+    ImageView back,save,effect,smoke,lens;
     public static Bitmap bitmap;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +47,12 @@ public class Effect_Activity extends AppCompatActivity {
         mGPUImageView.setImage(Edit_Activity.bitmap_img);
         back=findViewById(R.id.back);
         save=findViewById(R.id.save);
+        effect=findViewById(R.id.effect);
+        smoke=findViewById(R.id.smoke);
+        lens=findViewById(R.id.lens);
+        smoke_list=findViewById(R.id.smoke_list);
+        lens_list=findViewById(R.id.lens_list);
+
         getWindow().setFlags(1024,1024);
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -61,11 +66,36 @@ public class Effect_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveImage();
+            }
+        });
+        effect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
             }
         });
-        Add_Image_Effect();
+        smoke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
+        lens.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        Add_Image_Effect();
+        Add_Image_Smoke();
+
+    }
+
+    private void Add_Image_Smoke() {
+        ArrayList arrayList=new ArrayList();
+        arrayList.add(Integer.valueOf(R.drawable.cup2));
+        effect_list.setAdapter((ListAdapter) new Smoke_Adapter(this, arrayList));
     }
 
     private void Add_Image_Effect() {
