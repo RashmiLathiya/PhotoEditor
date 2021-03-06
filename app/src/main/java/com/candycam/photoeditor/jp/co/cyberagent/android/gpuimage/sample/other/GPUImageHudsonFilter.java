@@ -5,9 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import com.candycam.photoeditor.R;
 
-/**
- * Created by sam on 14-8-9.
- */
+
 public class GPUImageHudsonFilter extends GPUImageThreeTextureFilter
 {
     private static final String SHADER = "\n precision lowp float;\n\n " +

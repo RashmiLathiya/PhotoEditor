@@ -10,9 +10,7 @@ import jp.co.cyberagent.android.gpuimage.OpenGlUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by sam on 14-8-9.
- */
+
 public class IFImageFilter extends GPUImageFilter {
     private int filterInputTextureUniform2;
     private int filterInputTextureUniform3;

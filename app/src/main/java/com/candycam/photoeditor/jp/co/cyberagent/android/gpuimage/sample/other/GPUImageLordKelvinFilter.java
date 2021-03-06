@@ -5,9 +5,7 @@ import android.graphics.BitmapFactory;
 import jp.co.cyberagent.android.gpuimage.GPUImageTwoInputFilter;
 import com.candycam.photoeditor.R;
 
-/**
- * Created by sam on 14-8-9.
- */
+
 public class GPUImageLordKelvinFilter extends GPUImageTwoInputFilter {
 
     private static final String SHADER = "precision lowp float;\n" +

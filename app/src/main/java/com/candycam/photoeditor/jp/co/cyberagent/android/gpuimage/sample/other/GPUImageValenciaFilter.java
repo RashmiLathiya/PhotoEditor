@@ -5,9 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import com.candycam.photoeditor.R;
 
-/**
- * Created by sam on 14-8-9.
- */
+
 public class GPUImageValenciaFilter extends GPUImageTwoTextureFilter
 {
     private static final String SHADER = "precision lowp float;\n" +

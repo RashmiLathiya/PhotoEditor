@@ -11,9 +11,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
-/**
- * Created by sam on 14-8-9.
- */
+
 public class GPUImageFourTextureFilter extends GPUImageFilter
 {
     private static final String VERTEX_SHADER = "attribute vec4 position;\nattribute vec4 inputTextureCoordinate;\nattribute vec4 inputTextureCoordinate2;\nattribute vec4 inputTextureCoordinate3;\nattribute vec4 inputTextureCoordinate4;\nattribute vec4 inputTextureCoordinate5;\n \nvarying vec2 textureCoordinate;\nvarying vec2 textureCoordinate2;\nvarying vec2 textureCoordinate3;\nvarying vec2 textureCoordinate4;\nvarying vec2 textureCoordinate5;\n \nvoid main()\n{\n    gl_Position = position;\n    textureCoordinate = inputTextureCoordinate.xy;\n    textureCoordinate2 = inputTextureCoordinate2.xy;\n    textureCoordinate3 = inputTextureCoordinate3.xy;\n    textureCoordinate4 = inputTextureCoordinate4.xy;\n    textureCoordinate5 = inputTextureCoordinate5.xy;\n}";

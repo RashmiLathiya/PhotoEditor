@@ -2,9 +2,6 @@ package com.candycam.photoeditor.jp.co.cyberagent.android.gpuimage.sample.utils;
 
 import android.util.Log;
 
-/**
- * Created by sam on 14-8-4.
- */
 public class CLog {
     public static final String LOG_TAG = CLog.class.getSimpleName();
 
@@ -23,9 +20,6 @@ public class CLog {
         return LOG_PREFIX + str;
     }
 
-    /**
-     * WARNING: Don't use this when obfuscating class names with Proguard!
-     */
     public static String makeLogTag(Class<?> cls) {
         return makeLogTag(cls.getSimpleName());
     }

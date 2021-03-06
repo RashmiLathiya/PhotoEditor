@@ -3,9 +3,7 @@ package com.candycam.photoeditor.jp.co.cyberagent.android.gpuimage.sample.filter
 import android.content.Context;
 import com.candycam.photoeditor.R;
 
-/**
- * Created by sam on 14-8-9.
- */
+
 public class IFLordKelvinFilter extends IFImageFilter {
     private static final String SHADER = "precision lowp float;\n" +
             " \n" +
